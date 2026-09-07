@@ -1,0 +1,17 @@
+{
+  "name": "paint-party-nz",
+  "version": "1.0.0",
+  "description": "Paint Party NZ by nishi bhala website",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Build complete'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}

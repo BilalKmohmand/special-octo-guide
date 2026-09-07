@@ -1,0 +1,6 @@
+{
+  "name": "Paint Party NZ by nishi bhala",
+  "description": "Creative mobile art & craft paint parties in Auckland, Hamilton & Tauranga by Nishi Bhala",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
