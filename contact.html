@@ -22,61 +22,6 @@
 <script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","@id":"https://paintparty.nz/contact#webpage","name":"Contact Us — Paint Party NZ by nishi bhala","url":"https://paintparty.nz/contact","isPartOf":{"@id":"https://paintparty.nz/#website"},"about":{"@id":"https://paintparty.nz/#organization"}}</script>
     <script src="/airo-video-slots.js"></script>
     <script src="/airo-logo-orientation.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("gSX-Oxa27Y_9fgmZ-");
-      })();
-    </script>
-    <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        // Wait for the form to be rendered
-        const observer = new MutationObserver(function(mutations) {
-          const form = document.querySelector('form');
-          if (form && !form.hasAttribute('data-emailjs-handled')) {
-            form.setAttribute('data-emailjs-handled', 'true');
-            form.addEventListener('submit', function(e) {
-              e.preventDefault();
-              
-              const formData = new FormData(form);
-              const templateParams = {
-                from_name: formData.get('name') || '',
-                from_email: formData.get('email') || '',
-                phone: formData.get('phone') || '',
-                message: formData.get('message') || '',
-                special_requirements: formData.get('specialRequirements') || ''
-              };
-              
-              // Find submit button and disable it
-              const submitBtn = form.querySelector('button[type="submit"]');
-              if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-              }
-              
-              emailjs.send('service_de07ppb', 'template_3vswonh', templateParams)
-                .then(function() {
-                  alert('Message sent successfully!');
-                  form.reset();
-                  if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
-                  }
-                }, function(error) {
-                  console.error('FAILED...', error);
-                  alert('Failed to send message. Please try again.');
-                  if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
-                  }
-                });
-            });
-          }
-        });
-        
-        observer.observe(document.body, { childList: true, subtree: true });
-      });
-    </script>
     <script type="module" crossorigin src="/assets/index-D24ZbUJV.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/query-Bf_KNblN.js">
     <link rel="modulepreload" crossorigin href="/assets/react-vendor-BXhMAbgd.js">
